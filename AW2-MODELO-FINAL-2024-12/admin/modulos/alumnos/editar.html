@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALUMNOS</title>
+    <link rel="stylesheet" href="/recursos/css/base.css">
+    <script type="module" src="./js/editar.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/">Inicio</a>
+            <a href="index.html">Listado alumnos</a>
+            <a href="alta.html">Alta alumno</a>
+        </nav>
+    </header>
+    <hr>
+    <main>
+
+        <h1>Alumnos</h1>
+        <h2>Editar</h2>
+        <div class="eliminar-registro">
+            <button class="boton-eliminar" id="eliminar-registro">Eliminar registro</button>
+        </div>
+        <div class="mensajes" id="mensajes"></div>
+        <section>
+            <form id="form-editar">
+                <label for="dni">
+                    DNI
+                    <input type="number" name="dni" id="dni" step="1" required>
+                </label>
+                <label for="nombre">
+                    NOMBRE
+                    <input type="text" name="nombre" id="nombre" required>
+                </label>
+                <label for="apellido">
+                    APELLIDO
+                    <input type="text" name="apellido" id="apellido" required>
+                </label>
+                <label for="email">
+                    EMAIL
+                    <input type="email" name="email" id="email" required>
+                </label>
+                <button type="submit">Modificar</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
